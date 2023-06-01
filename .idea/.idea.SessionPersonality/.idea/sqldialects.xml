@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../../../../Program Files/Microsoft SQL Server/150/Shared/SqlDumper.exe" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/SessionPersonality/frm_ViewAct.resx" dialect="TSQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>

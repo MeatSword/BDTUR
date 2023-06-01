@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionPersonality", "SessionPersonality\SessionPersonality.csproj", "{2EBD5BAE-3DD5-44D4-A29C-63D6C036DC0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EBD5BAE-3DD5-44D4-A29C-63D6C036DC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBD5BAE-3DD5-44D4-A29C-63D6C036DC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBD5BAE-3DD5-44D4-A29C-63D6C036DC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBD5BAE-3DD5-44D4-A29C-63D6C036DC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

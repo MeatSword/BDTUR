@@ -1,0 +1,68 @@
+INSERT INTO TurBase.dbo.Country (countryid, countryname, flag) VALUES (1, N'Китай', null);
+INSERT INTO TurBase.dbo.Country (countryid, countryname, flag) VALUES (2, N'Германия', null);
+INSERT INTO TurBase.dbo.Country (countryid, countryname, flag) VALUES (3, N'Кипр', null);
+INSERT INTO TurBase.dbo.Country (countryid, countryname, flag) VALUES (4, N'Катар', null);
+INSERT INTO TurBase.dbo.Country (countryid, countryname, flag) VALUES (5, N'Египет', null);
+INSERT INTO TurBase.dbo.Country (countryid, countryname, flag) VALUES (6, N'Япония', null);
+INSERT INTO TurBase.dbo.Country (countryid, countryname, flag) VALUES (7, N'Испания', null);
+
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (1, N'Пекин', 1);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (2, N'Доха', 4);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (3, N'Пафос', 3);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (4, N'Мюнхен', 2);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (5, N'Каир', 5);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (6, N'Берлин', 2);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (7, N'Хургада', 5);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (8, N'Айя-Напа', 3);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (9, N'Шанхай', 1);
+INSERT INTO TurBase.dbo.City (cityid, cityname, idCountry) VALUES (10, N'Токио', 6);
+
+INSERT INTO TurBase.dbo.Hotel (id, name, rate, services, typeNutr) VALUES (1, N'Солнечный', 1, N'1,3,4', N'1');
+INSERT INTO TurBase.dbo.Hotel (id, name, rate, services, typeNutr) VALUES (2, N'Патрон', 2, N'1,2,5,6,7', N'2');
+INSERT INTO TurBase.dbo.Hotel (id, name, rate, services, typeNutr) VALUES (3, N'Звезда', 3, N'2,3,4,5,6,7', N'3');
+INSERT INTO TurBase.dbo.Hotel (id, name, rate, services, typeNutr) VALUES (4, N'Легадж', 4, N'2,4,6,8', N'4');
+INSERT INTO TurBase.dbo.Hotel (id, name, rate, services, typeNutr) VALUES (5, N'Урбан', 5, N'5,6,9', N'5');
+
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (1, N'RO');
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (2, N'BB');
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (3, N'HB');
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (4, N'FB');
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (5, N'HB+');
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (6, N'FB+');
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (7, N'AI');
+INSERT INTO TurBase.dbo.Nutr (id, Name) VALUES (8, N'UAI');
+
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (1, 6, 60000, N'2018-02-12', N'2018-02-20', 1);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (2, 10, 80000, N'2018-04-01', N'2018-04-16', 2);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (3, 5, 50000, N'2018-06-15', N'2018-06-26', 2);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (4, 1, 65000, N'2018-06-18', N'2018-06-29', 2);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (5, 3, 70000, N'2018-07-12', N'2018-07-28', 3);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (6, 8, 76000, N'2018-07-13', N'8018-07-23', 3);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (7, 3, 75000, N'2018-07-28', N'2018-08-08', 4);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (8, 9, 89000, N'2018-08-01', N'2018-08-16', 5);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (9, 11, 64000, N'2018-08-14', N'2018-08-24', 5);
+INSERT INTO TurBase.dbo.Tour (tourid, idCity, tourcost, dateofarrival, dateofdeparture, HotelId) VALUES (10, 17, 89000, N'2018-08-12', N'2018-08-23', 1);
+
+INSERT INTO TurBase.dbo.Users (id, login, password, [order], status) VALUES (1, N'opik', N'sasha2005', 500000, N'user');
+INSERT INTO TurBase.dbo.Users (id, login, password, [order], status) VALUES (2, N'admin', N'password', 0, N'admin');
+INSERT INTO TurBase.dbo.Users (id, login, password, [order], status) VALUES (3, N'lotasuk', N'pass', 1500000, N'user');
+INSERT INTO TurBase.dbo.Users (id, login, password, [order], status) VALUES (4, N'witnes', N'loh', 5000000, N'user');
+INSERT INTO TurBase.dbo.Users (id, login, password, [order], status) VALUES (5, N'pikest', N'loshara', 400000, N'user');
+INSERT INTO TurBase.dbo.Users (id, login, password, [order], status) VALUES (6, N'fulldaun', N'daun', 400000, N'user');
+
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (1, N'SPA');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (2, N'Sport');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (3, N'FIT');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (4, N'Marry');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (5, N'VIP');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (6, N'Exlusive');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (7, N'WiFi');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (8, N'Cond');
+INSERT INTO TurBase.dbo.Services (id, Name) VALUES (9, N'Transfer');
+
+INSERT INTO TurBase.dbo.Actions (idAct, name, [desc], category, valueDiscont, typeDiscont, isDate, isSumm, ways, dateAdd) VALUES (23, N'Китай', N'Все на китай', 3, 50, N'Procented', 1, 1, N'1,9,17', N'2023-04-14');
+INSERT INTO TurBase.dbo.Actions (idAct, name, [desc], category, valueDiscont, typeDiscont, isDate, isSumm, ways, dateAdd) VALUES (24, N'Египет', N'Все на египет', 2, 5000, N'Fixed', 0, 1, N'5,7', N'2023-04-14');
+INSERT INTO TurBase.dbo.Actions (idAct, name, [desc], category, valueDiscont, typeDiscont, isDate, isSumm, ways, dateAdd) VALUES (25, N'Кипр', N'Для лютых бедняков-сильверов', 1, 2500, N'Fixed', 0, 1, N'3,8', N'2023-04-14');
+INSERT INTO TurBase.dbo.Actions (idAct, name, [desc], category, valueDiscont, typeDiscont, isDate, isSumm, ways, dateAdd) VALUES (27, N'Бомж-акция', N'Для бомжей', 3, 4900, N'Fixed', 0, 1, N'2,4,6', N'2023-04-15');
+INSERT INTO TurBase.dbo.Actions (idAct, name, [desc], category, valueDiscont, typeDiscont, isDate, isSumm, ways, dateAdd) VALUES (29, N'Недельная', N'на недельку', 2, 5000, N'Fixed', 1, 1, N'1,2,3,4,5,6,7,8,9,10', N'2023-04-17');
+
